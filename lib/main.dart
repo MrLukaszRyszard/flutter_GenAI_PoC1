@@ -50,7 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    //final theme = Theme.of(context); 
     return Scaffold(
+      //backgroundColor: theme.colorScheme.onSecondary,
       appBar: AppBar(
         title: Text('Prove of Concept 1'),
       ),
@@ -58,7 +60,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Enter your question:'),
+            Text(
+              'Enter your question:',
+              style: TextStyle(fontSize: 16),
+            ),
             SizedBox(height: 10),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
